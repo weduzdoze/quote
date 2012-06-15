@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$("#addAccountButton").click(function() {
 	  	$('#addAccountForm').slideDown('slow');
-		$(this).hide()
+		$("#addAccountButton").hide()
     });
 	$("#hideAdminForm").click(function(e) {
 	  	e.preventDefault();

@@ -5,6 +5,11 @@
 	</fuseaction>	
 	<fuseaction name="saveNew">
 		<do action="mAccounts.saveNew" />
+		<relocate url="/admin/index.cfm?fuseaction=accounts.view" type="client"/>
 		<do action="accounts.view" />
-	</fuseaction>			
+	</fuseaction>
+	<fuseaction name="edit">
+		<do action="mAccounts.edit" />
+		<do action="vAccounts.edit" />
+	</fuseaction>				
 </circuit>

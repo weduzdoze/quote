@@ -22,8 +22,12 @@
 <cfcatch type="missingInclude"><cfif len(cfcatch.MissingFileName) gte 20 and right(cfcatch.MissingFileName,20) is "qry_saveNewAdmin.cfm">
 <cfthrow type="fusebox.missingFuse" message="missing Fuse" detail="You tried to include a fuse qry_saveNewAdmin.cfm in circuit mAccounts which does not exist (from fuseaction mAccounts.saveNew).">
 <cfelse><cfrethrow></cfif></cfcatch></cftry>
+<cfset myFusebox.thisCircuit = "accounts">
+<cflocation url="/admin/index.cfm?fuseaction=accounts.view" addtoken="false">
+<cfabort>
 <!--- do action="accounts.view" --->
 <!--- do action="mAccounts.view" --->
+<cfset myFusebox.thisCircuit = "mAccounts">
 <cfset myFusebox.thisFuseaction = "view">
 <cftry>
 <cfoutput><cfinclude template="../model/mAccounts/qry_getAccounts.cfm"></cfoutput>

@@ -1,5 +1,4 @@
-﻿<cfif session.accessLevel EQ 1>
-	
+﻿<cfif session.accessLevel EQ 1>	
 	<button id="addAccountButton">Add Admin</button>
 	<div id="addAccountForm">
 		<h1>Administrators</h1>
@@ -31,8 +30,7 @@
 					<th><button name="hideAdminForm" id="hideAdminForm">Hide</button></th>
 					<td><input type="submit" value="Add Admin"></td>
 				</tr>			
-			</table>
-						
+			</table>					
 		</form>
 	</div>
 	<br />
@@ -45,7 +43,7 @@
 			</tr>
 			<cfoutput query="users">
 				<tr>
-					<td>#username#</td>
+					<td><a href="index.cfm?fuseaction=accounts.edit&aid=#id#">#username#</a></td>
 					<td>#accessLevel#</td>
 					<cfif len(LastLoginDateTime) GT 0>	
 						<td>#DateFormat(LastLoginDateTime,'medium' )# #TimeFormat(LastLoginDateTime)#</td>
