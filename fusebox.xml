@@ -5,6 +5,10 @@
 		<circuit alias="mLayout" path="model/mLayout/" parent=""/>
 		<circuit alias="vLayout" path="view/vLayout/" parent=""/>
 
+		<circuit alias="home" path="controller/home/" parent=""/>
+		<circuit alias="mHome" path="model/mHome/" parent=""/>
+		<circuit alias="vHome" path="view/vHome/" parent=""/>		
+		
 		<circuit alias="user" path="controller/user/" parent=""/>
 		<circuit alias="mUser" path="model/mUser/" parent=""/>
 		<circuit alias="vUser" path="view/vUser/" parent=""/>	
@@ -12,22 +16,7 @@
 		<circuit alias="manage" path="controller/manage/" parent=""/>
 		<circuit alias="mManage" path="model/mManage/" parent=""/>
 		<circuit alias="vManage" path="view/vManage/" parent=""/>
-		
-		<circuit alias="event" path="controller/event/" parent=""/>
-		<circuit alias="mEvent" path="model/mEvent/" parent=""/>
-		<circuit alias="vEvent" path="view/vEvent/" parent=""/>			
-
-		<circuit alias="artist" path="controller/artist/" parent=""/>
-		<circuit alias="mArtist" path="model/mArtist/" parent=""/>
-		<circuit alias="vArtist" path="view/vArtist/" parent=""/>		
-
-		<circuit alias="genre" path="controller/genre/" parent=""/>
-		<circuit alias="mGenre" path="model/mGenre/" parent=""/>
-		<circuit alias="vGenre" path="view/vGenre/" parent=""/>	
-		
-		<circuit alias="venue" path="controller/venue/" parent=""/>
-		<circuit alias="mVenue" path="model/mVenue/" parent=""/>
-		<circuit alias="vVenue" path="view/vVenue/" parent=""/>										
+	
 	</circuits>
 
 	<classes>
@@ -36,7 +25,7 @@
 
 	<parameters>
 		<parameter name="fuseactionVariable" value="fuseaction" />
-		<parameter name="defaultFuseaction" value="user.index" />
+		<parameter name="defaultFuseaction" value="home.view" />
 		<parameter name="precedenceFormOrUrl" value="form"/>
 		<parameter name="mode" value="development"/>
 		<parameter name="password" value=""/>
@@ -53,7 +42,7 @@
 
 	<globalfuseactions>
 		<preprocess>
-			<do action="user.check" />
+			
 		</preprocess>
 		<postprocess>
 			<do action="layout.layout" />
