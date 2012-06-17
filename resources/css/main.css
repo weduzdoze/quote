@@ -45,11 +45,14 @@ body{
 }
 .navLink{
 	position:relative;
-	width:176px;
+	
 	height:40px;
 	padding-top:10px;
 	border:0px;
 	margin:0px;
 	float:left;
 }
-
+.divider{
+	padding-top:10px;
+	float:left;
+}

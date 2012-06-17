@@ -29,11 +29,17 @@
 			</div>
 		</div>
 		<div class="nav">
+			<img class="divider" src="../../resources/images/divider.png">
 			<a href=""><img class="navLink" id="button1" src="../../resources/images/button1.png"></a>
+			<img class="divider" src="../../resources/images/divider.png">
 			<a href=""><img class="navLink" id="button2" src="../../resources/images/button2.png"></a>
+			<img class="divider" src="../../resources/images/divider.png">
 			<a href=""><img class="navLink" id="button3" src="../../resources/images/button3.png"></a>
+			<img class="divider" src="../../resources/images/divider.png">
 			<a href=""><img class="navLink" id="button4" src="../../resources/images/button4.png"></a>
+			<img class="divider" src="../../resources/images/divider.png">
 			<a href=""><img class="navLink" id="button5" src="../../resources/images/button5.png"></a>
+			<img class="divider" src="../../resources/images/divider.png">
 		</div>
 		<div class="content">
 			<cfoutput>#fusebox.layout#</cfoutput>		
