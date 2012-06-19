@@ -4,6 +4,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html>
 <head>
+	<title>Callahan Financial</title>
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script type="text/javascript">
 	  google.load("jquery", "1.4.2");
@@ -23,11 +24,20 @@
 	</cfif>
 	<div><img src="../../resources/images/bgTop.png" alt="" width="920" height="19"></div>
 	<div class="mainBoard">
-		<div class="header">
-			<div class="logo">
-				
-			</div>
+		<div class="headerLeft">
 		</div>
+		<div class="headerRight">
+			<img class="bar" src="../../resources/images/bar1.png">
+			<a href=""><img class="linkLI" src="../../resources/images/contact.png"></a>
+			<img class="circle" src="../../resources/images/circle.png">
+			<a href=""><img class="linkLI" src="../../resources/images/sitemap.png"></a>
+			<img class="social" src="../../resources/images/social.jpg">
+			
+		</div>
+		<div class="headerText">
+			<img class="social" src="../../resources/images/callToday.png">
+		</div>
+		
 		<div class="nav">
 			<img class="divider" src="../../resources/images/divider.png">
 			<a href=""><img class="navLink" id="button1" src="../../resources/images/button1.png"></a>
@@ -40,6 +50,7 @@
 			<img class="divider" src="../../resources/images/divider.png">
 			<a href=""><img class="navLink" id="button5" src="../../resources/images/button5.png"></a>
 			<img class="divider" src="../../resources/images/divider.png">
+			
 		</div>
 		<div class="content">
 			<cfoutput>#fusebox.layout#</cfoutput>		
@@ -63,9 +74,7 @@
 				$(this).attr('src','../../resources/images/button' + value + 'hover.png');
 			}).mouseleave(function(){
 				$(this).attr('src','../../resources/images/button' + value + '.png');
-			}); 
-				
+			}); 				
 		});
-
-		});				
+	});				
 </script>

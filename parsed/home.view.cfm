@@ -9,7 +9,7 @@
 <cfset myFusebox.thisCircuit = "vHome">
 <cfset myFusebox.thisFuseaction = "view">
 <cftry>
-<cfoutput><cfinclude template="../view/vHome/dsp_home.cfm"></cfoutput>
+<cfsavecontent variable="fusebox.layout"><cfoutput><cfinclude template="../view/vHome/dsp_home.cfm"></cfoutput></cfsavecontent>
 <cfcatch type="missingInclude"><cfif len(cfcatch.MissingFileName) gte 12 and right(cfcatch.MissingFileName,12) is "dsp_home.cfm">
 <cfthrow type="fusebox.missingFuse" message="missing Fuse" detail="You tried to include a fuse dsp_home.cfm in circuit vHome which does not exist (from fuseaction vHome.view).">
 <cfelse><cfrethrow></cfif></cfcatch></cftry>
