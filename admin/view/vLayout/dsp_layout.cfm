@@ -50,6 +50,7 @@
 		</div>
 		<ul>
 			<li><a class="linkButton" href="index.cfm?fuseaction=manage.home">Home</a></li>
+			<li><a class="linkButton" href="index.cfm?fuseaction=quotes.view">Quotes</a></li>
 			<li><a class="linkButton" href="index.cfm?fuseaction=applications.view">Applications</a></li>
 			<li><a class="linkButton" href="index.cfm?fuseaction=accounts.view">Users</a></li>
 			

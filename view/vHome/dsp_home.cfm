@@ -1,4 +1,4 @@
-﻿<!---<div id="homeLeft">
+﻿<!---<div id="homeContainer">
 	<form>
 		<table style="font-family:'minion'">
 		<tr>
@@ -16,7 +16,4 @@
 		</table>		
 	</form>
 
-</div>
-<div id="homeRight">
-	
 </div>--->

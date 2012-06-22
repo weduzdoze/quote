@@ -389,4 +389,5 @@ limitations under the License.
 	<cfset this.name="rage"/>
 	<cfset this.sessionmanagement="yes"/>
 	<cfset this.datasource = "rage" />
+	<cfset this.resourcePath = "/resources" />
 </cfcomponent>

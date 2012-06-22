@@ -15,7 +15,11 @@
 
 		<circuit alias="accounts" path="controller/accounts/" parent=""/>
 		<circuit alias="mAccounts" path="model/mAccounts/" parent=""/>
-		<circuit alias="vAccounts" path="view/vAccounts/" parent=""/>											
+		<circuit alias="vAccounts" path="view/vAccounts/" parent=""/>
+		
+		<circuit alias="quotes" path="controller/quotes/" parent=""/>
+		<circuit alias="mQuotes" path="model/mQuotes/" parent=""/>
+		<circuit alias="vQuotes" path="view/vQuotes/" parent=""/>														
 	</circuits>
 
 	<classes>

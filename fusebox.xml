@@ -16,6 +16,10 @@
 		<circuit alias="manage" path="controller/manage/" parent=""/>
 		<circuit alias="mManage" path="model/mManage/" parent=""/>
 		<circuit alias="vManage" path="view/vManage/" parent=""/>
+		
+		<circuit alias="quote" path="controller/quote/" parent=""/>
+		<circuit alias="mQuote" path="model/mQuote/" parent=""/>
+		<circuit alias="vQuote" path="view/vQuote/" parent=""/>		
 	
 	</circuits>
 
@@ -27,7 +31,7 @@
 		<parameter name="fuseactionVariable" value="fuseaction" />
 		<parameter name="defaultFuseaction" value="home.view" />
 		<parameter name="precedenceFormOrUrl" value="form"/>
-		<parameter name="mode" value="development"/>
+		<parameter name="mode" value="production"/>
 		<parameter name="password" value=""/>
 		<parameter name="parseWithComments" value="false" />
 		<parameter name="conditionalParse" value="false" />

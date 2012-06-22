@@ -388,5 +388,5 @@ limitations under the License.
 	</cfprocessingdirective>
 	<cfset this.name="quote"/>
 	<cfset this.sessionmanagement="yes"/>
-	<cfset this.datasource = "quotw" />
+	<cfset this.datasource = "quote" />
 </cfcomponent>
