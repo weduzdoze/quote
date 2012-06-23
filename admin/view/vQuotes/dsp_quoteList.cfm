@@ -13,7 +13,7 @@
 		<td>			
 			<cfif getAdminQuotes.sex EQ "M">Male<cfelse>Female</cfif>
 		</td>	
-		<td>#DateFormat(getAdminQuotes.dateCreated,'medium' )#</td>
+		<td>#DateFormat(getAdminQuotes.dateCreated,'medium')# - #TimeFormat(getAdminquotes.dateCreated,'short')#</td>
 	</tr>		
 </cfoutput>
 </table>

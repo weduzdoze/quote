@@ -4,5 +4,5 @@
 	</fuseaction>
 	<fuseaction name="get">
 		<include template="qry_getQuote.cfm" />
-	</fuseaction>			
+	</fuseaction>				
 </circuit>

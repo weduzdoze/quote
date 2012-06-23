@@ -5,5 +5,11 @@
 	</fuseaction>
 	<fuseaction name="delete">
 		<do action="mManage.delete" />
-	</fuseaction>		
+	</fuseaction>	
+	<fuseaction name="saveSpecialty">
+		<do action="mManage.saveSpecialty" />
+	</fuseaction>	
+	<fuseaction name="getSpecialties">
+		<do action="mManage.getSpecialties" />
+	</fuseaction>				
 </circuit>

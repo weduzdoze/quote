@@ -1,4 +1,4 @@
-﻿<cfparam name="column" default="companyID">
+﻿<cfparam name="column" default="dateCreated">
 <cfparam name="filter" default="DESC">
 
 <cfquery name="getAdminQuotes">

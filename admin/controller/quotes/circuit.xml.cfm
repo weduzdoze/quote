@@ -6,5 +6,8 @@
 	<fuseaction name="new">
 		<do action="mQuotes.new" />
 		<do action="vQuotes.new" />
-	</fuseaction>		
+	</fuseaction>
+	<fuseaction name="save">
+		<do action="mQuotes.save" />
+	</fuseaction>				
 </circuit>

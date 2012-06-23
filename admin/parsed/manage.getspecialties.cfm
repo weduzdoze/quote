@@ -1,7 +1,7 @@
 <cfsetting enablecfoutputonly="true" />
 <cfprocessingdirective pageencoding="utf-8" />
-<!--- circuit: quotes --->
-<!--- fuseaction: new --->
+<!--- circuit: manage --->
+<!--- fuseaction: getSpecialties --->
 <cftry>
 <!--- do action="user.check" --->
 <!--- do action="mUser.check" --->
@@ -13,26 +13,19 @@
 <cfcatch type="missingInclude"><cfif len(cfcatch.MissingFileName) gte 20 and right(cfcatch.MissingFileName,20) is "act_checkSession.cfm">
 <cfthrow type="fusebox.missingFuse" message="missing Fuse" detail="You tried to include a fuse act_checkSession.cfm in circuit mUser which does not exist (from fuseaction mUser.check).">
 <cfelse><cfrethrow></cfif></cfcatch></cftry>
-<!--- do action="mQuotes.new" --->
+<!--- do action="mManage.getSpecialties" --->
 <cfset myFusebox.thisPhase = "requestedFuseaction">
-<cfset myFusebox.thisCircuit = "mQuotes">
-<cfset myFusebox.thisFuseaction = "new">
+<cfset myFusebox.thisCircuit = "mManage">
+<cfset myFusebox.thisFuseaction = "getSpecialties">
 <cftry>
-<cfoutput><cfinclude template="../model/mQuotes/qry_getCompanies.cfm"></cfoutput>
-<cfcatch type="missingInclude"><cfif len(cfcatch.MissingFileName) gte 20 and right(cfcatch.MissingFileName,20) is "qry_getCompanies.cfm">
-<cfthrow type="fusebox.missingFuse" message="missing Fuse" detail="You tried to include a fuse qry_getCompanies.cfm in circuit mQuotes which does not exist (from fuseaction mQuotes.new).">
+<cfoutput><cfinclude template="../model/mManage/../mQuotes/qry_getSpecialties.cfm"></cfoutput>
+<cfcatch type="missingInclude"><cfif len(cfcatch.MissingFileName) gte 33 and right(cfcatch.MissingFileName,33) is "../mQuotes/qry_getSpecialties.cfm">
+<cfthrow type="fusebox.missingFuse" message="missing Fuse" detail="You tried to include a fuse ../mQuotes/qry_getSpecialties.cfm in circuit mManage which does not exist (from fuseaction mManage.getSpecialties).">
 <cfelse><cfrethrow></cfif></cfcatch></cftry>
 <cftry>
-<cfoutput><cfinclude template="../model/mQuotes/qry_getSpecialties.cfm"></cfoutput>
-<cfcatch type="missingInclude"><cfif len(cfcatch.MissingFileName) gte 22 and right(cfcatch.MissingFileName,22) is "qry_getSpecialties.cfm">
-<cfthrow type="fusebox.missingFuse" message="missing Fuse" detail="You tried to include a fuse qry_getSpecialties.cfm in circuit mQuotes which does not exist (from fuseaction mQuotes.new).">
-<cfelse><cfrethrow></cfif></cfcatch></cftry>
-<!--- do action="vQuotes.new" --->
-<cfset myFusebox.thisCircuit = "vQuotes">
-<cftry>
-<cfsavecontent variable="fusebox.layout"><cfoutput><cfinclude template="../view/vQuotes/dsp_newQuote.cfm"></cfoutput></cfsavecontent>
-<cfcatch type="missingInclude"><cfif len(cfcatch.MissingFileName) gte 16 and right(cfcatch.MissingFileName,16) is "dsp_newQuote.cfm">
-<cfthrow type="fusebox.missingFuse" message="missing Fuse" detail="You tried to include a fuse dsp_newQuote.cfm in circuit vQuotes which does not exist (from fuseaction vQuotes.new).">
+<cfoutput><cfinclude template="../model/mManage/act_loadSpecialtiesDropdown.cfm"></cfoutput>
+<cfcatch type="missingInclude"><cfif len(cfcatch.MissingFileName) gte 31 and right(cfcatch.MissingFileName,31) is "act_loadSpecialtiesDropdown.cfm">
+<cfthrow type="fusebox.missingFuse" message="missing Fuse" detail="You tried to include a fuse act_loadSpecialtiesDropdown.cfm in circuit mManage which does not exist (from fuseaction mManage.getSpecialties).">
 <cfelse><cfrethrow></cfif></cfcatch></cftry>
 <!--- do action="layout.layout" --->
 <!--- do action="mLayout.layout" --->

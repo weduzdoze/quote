@@ -14,6 +14,7 @@
 	  google.load("jqueryui", "1.7.2");
 	</script>
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/jquery-ui-1.8.21.custom.css" />
 	
 	<div id="headerBannerLeft"></div>
 	<div id="headerBanner">
